@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Audiowide&family=Bebas+Neue&family=Chakra+Petch&family=Fugaz+One&family=Inter&family=Lilita+One&family=Merienda&family=Merriweather&family=Monoton&family=Nova+Square&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;1,6..12,400&family=Nunito:wght@200;300;400;500;600&family=Open+Sans:ital@0;1&family=Playfair+Display:ital@1&family=Poppins&family=Righteous&family=Saira+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* navBar */
+.navBar {
+    height: 9vh;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50%;
+    margin-left: 250px;
+
+
+}
+
+.navLinks {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.navLinks li {
+    list-style-type: none;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: black;
+    font-size: 17.6px;
+}
+
+/* heroSection */
+.heroSection {
+    background-image: url(./image/home-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.jumbotron {
+    width: 100%;
+    padding: 180px 200px 250px 150px;
+
+
+}
+
+.jumbotron h1 {
+    font-size: 52.8px;
+    /* padding: 5px; */
+    font-family: 'Merienda', cursive;
+}
+
+.jumbotron p {
+    font-size: 15px;
+    padding: 8.8px;
+    /* text-align: center; */
+    margin-right: 40%;
+    line-height: 30px;
+    
+}
+
+.jumbotron button {
+    padding: 10px;
+    background-color: burlywood;
+    border: none;
+    margin-left: 15%;
+    width: 10%;
+    margin-top: 10px;
+}
+
+.jumbotron button a {
+    text-decoration: none;
+    color: white;
+    font-size: 15.8px;
+    text-align: center;
+}
+
+.jumbotron button:hover {
+    background-color: black;
+}
+
+.aboutContainer {
+    height: 100%;
+    width: 100%;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+}
+
+.aboutImage img {
+    width: 800px;
+}
+
+.content {
+    width: 50%;
+
+}
+
+.content h3 {
+    font-size: 35.2px;
+    font-family: 'Merienda', cursive;
+}
+
+.content p {
+    font-size: 15px;
+    padding: 9px;
+    line-height: 25px;
+    
+}
+
+.content button {
+    padding: 10px;
+    background-color: burlywood;
+    border: none;
+    width: 20%;
+
+}
+
+.content button a {
+    text-decoration: none;
+    color: white;
+    font-size: 15.8px;
+}
+
+.content button:hover {
+    background-color: black;
+}
+
+/* facility container */
+.heading1 {
+    text-align: center;
+}
+
+.heading1 h3 {
+    font-size: 33.3px;
+    font-family: 'Merienda', cursive;
+}
+
+.facility {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* padding: 90px 150px 120px 150px; */
+    gap: 2rem;
+}
+.facilityImage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 50px;
+}
+.facilityImage img {
+    width: 100%;
+    /* height: 70%; */
+    aspect-ratio: 16/9;
+    object-fit: contain;
+    /* margin-left: 80px; */
+    padding: 50px 50px 0 50px;
+    
+}
+
+.facilityImage h3 {
+    text-align: center;
+    /* padding: 5px; */
+    /* margin-right: 60px; */
+    font-size: 17.6px;
+}
+
+.facilityImage p {
+    text-align: center;
+    /* padding: 5px; */
+    font-size: 13px;
+    line-height: 25px;
+}
+
+/* popular menu */
+.heading2 {
+    text-align: center;
+
+}
+
+.heading2 h3 {
+    font-size: 33.3px;
+    font-family: 'Merienda', cursive;
+}
+
+.popular {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /* padding: 100px 80px 75px 90px; */
+    gap: 2rem;
+}
+
+.popularimage img {
+    width: 90%;
+
+}
+
+.popularimage h3 {
+    text-align: center;
+    font-size: 17.6px;
+}
+
+/* gallery section */
+.heading3 {
+    text-align: center;
+}
+
+.heading3 h3 {
+    font-size: 33.3px;
+    font-family: 'Merienda', cursive;
+}
+
+.galleryImage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    /* padding: 100px 150px 185px 90px; */
+    width: 100%;
+}
+
+.galleryImage img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+/* team section */
+.heading4 {
+    text-align: center;
+}
+
+.heading4 h3 {
+    font-size: 33.3px;
+    font-family: 'Merienda', cursive;
+}
+
+.team {
+    width: 100%;
+    /* padding: 100px 120px 150px 100px; */
+    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.teamImage img {
+    width: 90%;
+}
+
+.teamImage h3 {
+    text-align: center;
+    font-size: 17.6px;
+}
+
+/* contact section */
+.heading5 {
+    text-align: center;
+}
+
+.heading5 h3 {
+    font-size: 33.3px;
+    font-family: 'Merienda', cursive;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.contactImage img {
+    width: 900px;
+}
+
+form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 30px;
+
+}
+
+form h3 {
+    text-align: center;
+    font-size: 22px;
+}
+
+label {
+    padding: 10px;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+}
+
+form button {
+    padding: 10px;
+    background-color: darkgoldenrod;
+    border: none;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 20px;
+
+
+}
+
+form button a {
+    color: black;
+    font-size: 17.6px;
+    text-decoration: none;
+}
+.addressIcon {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+
+
+
+}
+
+.mail i {
+    font-size: 2rem;
+    background-color: burlywood;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.mail h3 {
+    font-size: 17.6px;
+    margin-bottom: 10px;
+}
+
+.mail p {
+    font-size: 14.8px;
+    /* padding: 3px; */
+}
+
+.time i {
+    font-size: 2rem;
+    background-color: burlywood;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.time h3 {
+    font-size: 17.6px;
+    margin-bottom: 15px;
+}
+
+.time p {
+    font-size: 14.8px;
+    /* padding: 3px; */
+}
+
+.location i {
+    font-size: 2rem;
+    background-color: burlywood;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.location h3 {
+    font-size: 17.6px;
+    margin-bottom: 15px;
+}
+
+.location p {
+    font-size: 14.8px;
+    /* padding: 3px; */
+}
+
+.mobile i {
+    font-size: 2rem;
+    background-color: burlywood;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    color: white;
+
+}
+
+.mobile h3 {
+    font-size: 17.6px;
+    margin-bottom: 15px;
+}
+
+.mobile p {
+    font-size: 14.8px;
+    /* padding: 3px; */
+}
+
+.credit {
+    padding: 5px;
+    border-top: 2px solid black;
+    text-align: center;
+    font-size: 17.6px;
+
+    margin-right: 100px;
+    margin-left: 100px;
+
+}
+
+   

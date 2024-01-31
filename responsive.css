@@ -1,0 +1,160 @@
+.checkbtn {
+    color: #ffffff;
+    font-size: 25px;
+    margin-right: 20px;
+    padding: 4px 5px 1px 5px;
+    display: none;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+}
+
+#check {
+    display: none;
+}
+
+
+
+@media (max-width:576px) {
+
+    /* For navbar */
+    .logo img{
+        margin: 0;
+        
+    }
+    .navLinks {
+        background-color:white;
+        position: absolute;
+        top: 75px;
+        flex-direction: column;
+        display: none;
+        height: 300px;
+        width: 100%;
+    }
+
+    .navLinks li{
+        background-color: rgb(37, 35, 100);
+        height: 24.5%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navLinks li:hover{
+        background-color: #220fc569;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    #check:checked~.navLinks {
+        display: flex;
+    }
+    .jumbotron{
+        width: 50%;
+        padding: 0;
+        padding-top: 100px;
+        
+        padding-left: 20px;
+    }
+    .jumbotron h1{
+        font-size: 2.5rem;
+    }
+    .jumbotron p{
+        margin-right: 40%;
+    }
+    .jumbotron button{
+        /* margin-left: 120px; */
+        width: 50%;
+        margin: 0;
+        
+    }
+    /* about section */
+    .about{
+        font-display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .aboutImage{
+        width: 100%;
+        padding: 0;
+    }
+    .aboutImage img{
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 20px;
+        padding-top: 0;
+    }
+    .content button{
+        margin: 0;
+        margin-right: 360px;
+        
+
+    }
+    /* menu section */
+    .facilityContainer{
+        margin-top: 50px;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .facilityImage img{
+        
+        /* padding:2px 3px 5px 10px; */
+        /* width: 100%; */
+        
+    }
+    .facilityImage h3{
+        padding: 5px;
+    }
+    .facilityImage p{
+        padding: 0;
+    
+    }
+
+    
+    /* contact section */
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .contactImage{
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .contactImage img{
+        width: 100%;
+    }
+    .formtable form{
+        width: 100%;
+        margin-left: 20px;
+    }
+    .formtable form button{
+        margin:0;
+        width: 80%;
+        margin-left: 20px;
+        padding: 4px;
+    }
+    /* footer */
+    .footer{
+        padding-top: 30px;
+    }
+    .footer .addressIcon{
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    .credit{
+        border-top: 2px solid black;
+        display: flex;
+        font-size: 1rem;
+        font-family: 'Nunito', sans-serif;
+    }
+}
